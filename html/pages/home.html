@@ -9,7 +9,30 @@
 <link rel="icon" href="../../media/img/travel.png" />
 </head>
 
+<div class="topnav">
+  <a class="active" href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#services">SERVICES</a>
+  <a href="#gallery">GALLERY</a>
+  <a href="#contact">CONTACT</a>
+  
+</div>
+
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <a href="default.asp">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+
 <body>
+  <br>
   <h1>Hi I am Dumebi Nzegwu</h1>
   <img src="../../media/img/JULIET DUMEBI NZEGWU PASSPORT.jpeg" />
 
@@ -28,17 +51,47 @@
   <p>
 
 
-
+    <h1>
     <b>Our service includes:</b>
+    <h1></h1>
     <ol>
         <li>Flight Booking and Reservation
             <li>Visa Application
             <li>Hotel Reservation
             <li>Study Abroad Consultation
             <li>Travel Tour Packages
+           
+        <h1>Gallery</h1>
+        <!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="../../media/img/Picture3.png"alt="Visa Application" onclick="myFunction(this);">
+  </div> 
+  <div class="column">
+    <img src="../../media/img/Hotel Reservation.png" alt="Hotel Reservation" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../../media/img/Picture4.png" alt="Flight booking and Reservation" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="../../media/img/Picture5.png" alt="Travel Tour Packages" onclick="myFunction(this);">
+  </div>
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
     </ol>
     <audio controls>
-        <source src="../../media/audio/0139. Picnic - AShamaluevMusic.mp3">
+        <source src="../../media/audio/0139. Picnic - AShamaluevMusic.mp3" />
             Please Check the audio Extension
     </audio>
 
@@ -47,6 +100,34 @@
             <source src="../../media/video/travel-around-the-world-animation-with-airplane-flying-4k-video-animation-SBV-338108805-preview.mp4" />
             Please Check the video extension.
             </video>
+<br/>
+<br/>
+
+    <h2>Contact Me</h2>
+    <p>I'm just a message away!</p>
+  </div>
+            
+<br/>
+  <form action="action_page.php">
+    <div class="container"></div>
+
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</p>
+
 
       <!--- East Travels And Tour Destination-->
 
